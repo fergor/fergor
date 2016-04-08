@@ -16,7 +16,7 @@ var requestLogStream = fs.createWriteStream('./request.log', {flags: 'a'});
 var app = express();
 
 // Setup Express middleware
-//app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(favicon(__dirname + '/public/img/favicon.png'));
 app.use(logger('dev'));
 app.use(logger('combined', {stream: requestLogStream}));
 app.use(bodyParser.json());
