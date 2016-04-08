@@ -4,5 +4,19 @@
   "description": "Admin Tool",
   "main": "server.js",
   "author": "b4rti",
-  "license": "UNLICENSED"
+  "license": "GPL-3.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fergor/fergor.git"
+  },
+  "keywords": [
+    "rad"
+  ],
+  "bugs": {
+    "url": "https://github.com/fergor/fergor/issues"
+  },
+  "homepage": "https://github.com/fergor/fergor#readme"
 }
