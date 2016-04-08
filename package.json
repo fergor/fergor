@@ -1,0 +1,8 @@
+{
+  "name": "fergor",
+  "version": "0.0.1",
+  "description": "Admin Tool",
+  "main": "server.js",
+  "author": "b4rti",
+  "license": "UNLICENSED"
+}
