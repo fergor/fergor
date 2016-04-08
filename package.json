@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Admin Tool",
   "main": "server.js",
-  "author": "b4rti",
+  "author": "E3B & b4rti",
   "license": "GPL-3.0",
   "dependencies": {
     "basic-auth-connect": "^1.0.0",
