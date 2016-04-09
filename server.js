@@ -38,4 +38,5 @@ var SERVER_IP = 'localhost',
     SERVER_PORT = 8080;
 
 // Start listening
+console.log('Starting Server on ' + SERVER_IP + ':' + SERVER_PORT);
 app.listen(SERVER_PORT, SERVER_IP);
