@@ -34,8 +34,8 @@ app.get('*', function(req, res){
 });
 
 //
-var SERVER_IP = 'localhost',
-    SERVER_PORT = 8080;
+var SERVER_IP = process.env.IP | '0.0.0.0',
+    SERVER_PORT = process.env.PORT | 8080;
 
 // Start listening
 console.log('Starting Server on ' + SERVER_IP + ':' + SERVER_PORT);
