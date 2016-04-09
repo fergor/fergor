@@ -35,7 +35,7 @@ app.get('*', function(req, res){
 
 //
 var SERVER_IP = process.env.IP | '0.0.0.0',
-    SERVER_PORT = process.env.PORT | 8080;
+    SERVER_PORT = process.env.PORT | 13337;
 
 // Start listening
 console.log('Starting Server on ' + SERVER_IP + ':' + SERVER_PORT);

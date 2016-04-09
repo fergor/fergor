@@ -7,7 +7,9 @@
 ## Start
     
     npm install
-    node server.js
+    node server.js    
+    [localhost:13337](http://localhost:13337)
+
 
 
 ## ToDo:
