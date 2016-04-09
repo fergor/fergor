@@ -25,4 +25,4 @@
 
 * HW & SW Recognition
 * Loading /etc configs
-* SQLite
+* DB Backend
