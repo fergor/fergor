@@ -13,8 +13,12 @@
     <script src="/js/jquery.min.js"></script>
     <script src="/js/index.js"></script>
   </head>
-  <body>
-    <div id="menu">
+</head>
+<body>
+
+  <!-- Menu
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div id="menu">
       <div id="menu-header">
         Fergor
         <div class="showmenu">
@@ -23,32 +27,91 @@
         </div>
       </div>
       <ul id="cats">
-        <a href="#"><li class="cat active" id="section1">root 1<img src="img/icon_server.png"></li></a>
-        <a href="#"><li class="cat" id="section2">root2<img src="img/icon_server.png"></li></a>
-        <a href="#"><li class="cat" id="section3">root3<img src="img/icon_server.png"></li></a>
+      <div ng-app="">
+        <a href="#" ng-click="vis1 = !vis1"><li class="cat active" id="section1">root 1<img src="images/technology.png"></li></a>
+            <ul ng-show="vis1" ng-animate="{show: 'dogs-show', hide: 'dogs-hide'}">
+              <a href="#"><li class="dog" id="sectiona1"><img src="images/folder.png">nginx</li></a>
+              <a href="#"><li class="dog" id="sectiona2"><img src="images/folder.png">cornjobs</li></a>
+              <a href="#"><li class="dog" id="sectiona3"><img src="images/folder.png">IPtables</li></a>
+            </ul>
+        
+        <a href="#" ng-click="vis2 = !vis2"><li class="cat" id="section2">root2<img src="images/technology.png"></li></a>
+            <ul ng-show="vis2" ng-animate="{show: 'dogs-show', hide: 'dogs-hide'}">
+              <a href="#"><li class="dog" id="sectiona2"><img src="images/folder.png">cornjobs</li></a>
+              <a href="#"><li class="dog" id="sectiona4"><img src="images/folder.png">VNC</li></a>
+            </ul>
+        </div>
+        
       </ul>
       <div id="menu-footer">
         <p class="stamp">Fergor Remot Admin Desk ©</p>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="one-half column" style="margin-top: 25%">
-          <h4>Check out..</h4>
-          <p>the invincible Fergor ;)</p>
-        </div>
+</div>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="column" style="margin-top: 5%">
+            <svg class="progress blue noselect" data-progress="10" x="0px" y="0px" viewBox="0 0 80 80">
+                    <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                    <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                    <text class="value" x="50%" y="55%">0%</text>
+                    <text class="text" x="50%" y="115%">CPU1</text>
+            </svg>
+            <svg class="progress blue noselect" data-progress="33" x="0px" y="0px" viewBox="0 0 80 80">
+                    <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                    <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                    <text class="value" x="50%" y="55%">0%</text>
+                    <text class="text" x="50%" y="115%">CPU2</text>
+            </svg>
+            <svg class="progress blue noselect" data-progress="1" x="0px" y="0px" viewBox="0 0 80 80">
+                    <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                    <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                    <text class="value" x="50%" y="55%">0%</text>
+                    <text class="text" x="50%" y="115%">CPU1</text>
+            </svg>
+            <svg class="progress blue noselect" data-progress="18" x="0px" y="0px" viewBox="0 0 80 80">
+                    <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                    <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                    <text class="value" x="50%" y="55%">0%</text>
+                    <text class="text" x="50%" y="115%">CPU2</text>
+            </svg>
+            <svg class="progress green noselect" data-progress="18" x="0px" y="0px" viewBox="0 0 80 80">
+                    <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                    <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                    <text class="value" x="50%" y="55%">0%</text>
+                    <text class="text" x="50%" y="115%">Mem</text>
+            </svg>
+            
+        <h4>Check out..</h4>
+        <p>the invincible Fergor ;)</p>
+        <a class="button" href="#">Reboot</a>      
+        <a class="button" href="config.html">Config</a>
+       
       </div>
     </div>
-    <div class="footer">
-      <div id="button"></div>
-      <div id="container">
-        <div style="text-align: center;"><img src="img/icon_terminal.png"></div>
-        <div id="cont">
-          <div class="footer_center">
-            <h3>tty ;)</h3>
+  </div>
+
+<!-- Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="footer">
+  <div id="button"></div>
+<div id="container">
+<div style="text-align: center;"><img src="images/console.png"></div>
+<div id="cont">
+<div class="footer_center">
+	   <h3>tty ;)</h3>
+	   
+</div>
+</div>
+          <div class="container">
+            <div class="row">
+            <div class="one-half column">
+                <p>[fergor@fergor ~]$ _</p>
+            </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </body>
+</div>
+</body>
 </html>
